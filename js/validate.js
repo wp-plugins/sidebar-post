@@ -23,7 +23,7 @@ with (thisform)
   if (validate_required(content,"Your content is empty >> Not acceptable")==false)
   {content.focus();return false;}
   
-  if (validate_required(category,"Select a category please")==-1)
+  if (validate_required(category,"Select a category please")=="-1")
   {category.focus();return false;}
   }
 }
