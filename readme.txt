@@ -29,7 +29,7 @@ Check http://www.wprooms.com
 1. Add a simple post form on the sidebar
 
 == Changelog ==
-
+1.0
 
 == Upgrade Notice ==
 
