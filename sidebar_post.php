@@ -54,12 +54,12 @@ function ishimwe_inkuru_widget() { if ( is_user_logged_in() ){?>
 	<form action="<?php echo $site_home;?>/wp-content/plugins/sidebar-posting/post_post.php" method="post" onsubmit="return validate_form(this)">
 	  <p>
 	    <label><strong>Title</strong><br>
-	    <input name="title" type="text" style="width: 90%; background:#CCCCCC" value="">
+	    <input name="title" type="text" style="width: 90%; background:#EFEFEF" value="">
 	    </label>
 </p>
 	  <p>
 	    <label> <strong>Content of the post </strong><br>
-	    <textarea name="content" style="width: 90%; background:#CCCCCC"></textarea>
+	    <textarea name="content" style="width: 90%; background: #EFEFEF"></textarea>
 		</label>
 	    <br>
 		<label><strong>Category</strong>
@@ -71,7 +71,7 @@ function ishimwe_inkuru_widget() { if ( is_user_logged_in() ){?>
 				
 		</label>
 		<input type="hidden" name="owner" value="<?php echo $user_id;?>"  />
-	    <input type="submit" name="send_post" value="Send for review" style="width: 150px; height: 40px; background:#CCCCCC" />
+	    <input type="submit" name="send_post" value="Send for review" style="width: 150px; height: 40px; background:#EFEFEF" />
         </p>	
 	</form>
 
