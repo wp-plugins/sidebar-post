@@ -18,7 +18,9 @@ It comes  with a javascript form validation (user can't submit post if some fiel
 
 1. Upload the entire sidebar-post directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Enjoy
+3. Go to  "Appearance  >> Widgets " and add the  "NEW POST" widget where you want to have the form show up
+
+PS: You can also add the form anywhere in the wordpress by calling the <b>sidebar_post_widget()</b> function anywhere in the template files of the wordpress theme.
 
 == Frequently Asked Questions ==
 
