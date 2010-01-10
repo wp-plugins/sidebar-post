@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: Janvier Manishimwe
 Donate link: http://www.wprooms.com/donate
-Tags: post,sidebar, sidebar post, wordpress, posting
+Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 2.8.1
 Tested up to: Wordpress 2.9.1
 Stable tag: 1.0
