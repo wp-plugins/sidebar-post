@@ -39,7 +39,7 @@ add_action('wp_head', 'add_validator_js');
 add_action('wp_head', 'curPageName');
 ?>
 <?php 
-function sidebar-post_widget() { if ( is_user_logged_in() ){?>
+function sidebar_post_widget() { if ( is_user_logged_in() ){?>
 		<?php  	global $current_user;
      			get_currentuserinfo();
 				$user_level=$current_user->user_level . "\n";
@@ -89,7 +89,7 @@ function widget_sidebar_post_widget($args) {
   extract($args);
   echo $before_widget;
   echo $before_title;?>New Post<?php echo $after_title;
-  sidebar-post_widget();
+  sidebar_post_widget();
   echo $after_widget;
 }
 
