@@ -27,6 +27,7 @@ Check http://www.wprooms.com
 == Screenshots ==
 
 1. Add a simple post form on the sidebar
+2. You can call the form directly by adding the sidebar_post_widget() function anywhere in the template files of your wordpress theme.
 
 == Changelog ==
 1.0
