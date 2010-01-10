@@ -13,6 +13,8 @@ This plugin allows your visitors (logged in) to submit posts to your site via a 
 This plugin allows your visitors (logged in) to submit posts to your site via a simple sidebar widget form. The user must be logged in, otherwise they are shown a log in form.
 It comes  with a javascript form validation (user can't submit post if some fields are empty), and once the post has been submitted it is saved as a draft.
 
+You can join/follow the discussion about the plugin on its home page at http://forums.wprooms.com/topic/sidebar-post
+
 == Installation ==
 
 
