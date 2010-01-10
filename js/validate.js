@@ -24,7 +24,7 @@ with (thisform)
   {content.focus();return false;}
   
   var no_category=="-1";
-  if (validate_required(category,"Select a category please")==no_categorys)
+  if (validate_required(category,"Select a category please")==no_category)
   {category.focus();return false;}
   }
 }
