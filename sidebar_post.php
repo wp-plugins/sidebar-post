@@ -33,7 +33,7 @@ function curPageName() {
 
 ?>
 <?php function add_validator_js(){
-echo "<script type='text/javascript' src='".get_option('home')."/wp-content/plugins/sidebar-posting/js/validate.js'></script>";
+echo "<script type='text/javascript' src='".get_option('home')."/wp-content/plugins/sidebar-post/js/validate.js'></script>";
 }
 add_action('wp_head', 'add_validator_js');
 add_action('wp_head', 'curPageName');
@@ -51,7 +51,7 @@ function sidebar_post_widget() { if ( is_user_logged_in() ){?>
 				$display_name = $current_user->display_name . "\n";
 			?>
 <div style="border:thick dotted #A8E500; background: url(<?php echo get_option('home'); ?>/wp-content/plugins/sidebar-posting/images/arrow_form.jpg) no-repeat left">
-	<form action="<?php echo $site_home;?>/wp-content/plugins/sidebar-posting/post_post.php" method="post" onsubmit="return validate_form(this)">
+	<form action="<?php echo $site_home;?>/wp-content/plugins/sidebar-post/post_post.php" method="post" onsubmit="return validate_form(this)">
 	  <p>
 	    <label><strong>Title</strong><br>
 	    <input name="title" type="text" style="width: 90%; background:#EFEFEF" value="">
@@ -81,7 +81,7 @@ function sidebar_post_widget() { if ( is_user_logged_in() ){?>
 $site_home = get_option('home');
 echo '<div style="border:thick dotted #FF0000;"><form action="'.$site_home.'/wp-login.php" method="post">
 <input type="hidden" name="redirect_to" value="'.curPageName().'" />
-<input type="submit" style="background:url('.$site_home.'/wp-content/plugins/sidebar-posting/images/not_logged_in.gif); width: 200px; height: 60px;" name="login" value="" />
+<input type="submit" style="background:url('.$site_home.'/wp-content/plugins/sidebar-post/images/not_logged_in.gif); width: 200px; height: 60px;" name="login" value="" />
 </form>
 </div>';} } ?>
 <?php 
