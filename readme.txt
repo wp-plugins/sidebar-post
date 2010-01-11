@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Janvier Manishimwe
+Contributors: Janvier M
 Donate link: http://www.wprooms.com/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 2.8.1
