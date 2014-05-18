@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: Janvier M
+Contributors: ishimwe,joshuadamour,janvierdesigns
 Donate link: http://www.wprooms.com/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
-Requires at least: Wordpress 2.8.1
-Tested up to: Wordpress 2.9.1
-Stable tag: 1.0
+Requires at least: Wordpress 3.0
+Tested up to: Wordpress 3.9.1
+Stable tag: 1.0.1
 
 This plugin allows your visitors (logged in) to submit posts to your site via a simple sidebar widget form.
 
@@ -13,7 +13,7 @@ This plugin allows your visitors (logged in) to submit posts to your site via a 
 This plugin allows your visitors (logged in) to submit posts to your site via a simple sidebar widget form. The user must be logged in, otherwise they are shown a log in form.
 It comes  with a javascript form validation (user can't submit post if some fields are empty), and once the post has been submitted it is saved as a draft.
 
-You can join/follow the discussion about the plugin on its home page at http://forums.wprooms.com/topic/sidebar-post
+You can join/follow the discussion about the plugin on its home page at http://www.freelanceresources.net/forums/forum/plugins-and-softwares/sidebar-post/
 
 == Installation ==
 
@@ -26,7 +26,7 @@ PS: You can also add the form anywhere in the wordpress by calling the <b>sideba
 
 == Frequently Asked Questions ==
 
-Check http://www.wprooms.com 
+Check http://www.freelanceresources.net
 
 == Screenshots ==
 
@@ -34,7 +34,7 @@ Check http://www.wprooms.com
 2. You can call the form directly by adding the sidebar_post_widget() function anywhere in the template files of your wordpress theme.
 
 == Changelog ==
-1.0
+1.0.1
 
 == Upgrade Notice ==
 
