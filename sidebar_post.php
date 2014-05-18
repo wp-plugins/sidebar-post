@@ -3,7 +3,7 @@
 Plugin Name: Sidebar Posting
 Plugin URI: http://www.janvierdesigns.com
 Description: This plugin places a posting form in the sidebar
-Version: 1.0.1
+Version: 1.1.0
 Author: Janvier M @ JanvierDesigns
 Author URI: http://www.janvierdesigns.com 
 
@@ -30,8 +30,8 @@ function spost_loaded() {
 add_action( 'plugins_loaded', 'spost_loaded', 20 );
 global $shortname;
 $shortname = "spost_";
-define('SPOST_VERSION','1.0.1');
-define('SPOST_DATABASE_VERSION','1.0.1');
+define('SPOST_VERSION','1.1.0');
+define('SPOST_DATABASE_VERSION','1.1.0');
 define('SPOST_BUILD','05172014');
 define('SOFTWARE_NAME','Sidebar Post');
 define( 'SPOST_PLUGIN_DIR', WP_PLUGIN_DIR . '/sidebar-post' );

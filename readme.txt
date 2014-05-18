@@ -4,7 +4,7 @@ Donate link: http://www.wprooms.com/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 3.0
 Tested up to: Wordpress 3.9.1
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 
 This plugin allows your visitors (logged in) to submit posts to your site via a simple sidebar widget form.
 
@@ -34,7 +34,11 @@ Check http://www.freelanceresources.net
 2. You can call the form directly by adding the sidebar_post_widget() function anywhere in the template files of your wordpress theme.
 
 == Changelog ==
-1.0.1
+1.0.1 : *Introduced Full translation support
+	*Added Widget options control
+	*added responsiveness
+1.1.0 : *Ajax Login
+
 
 == Upgrade Notice ==
 
