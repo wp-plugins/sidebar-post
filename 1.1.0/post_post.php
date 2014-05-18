@@ -24,7 +24,7 @@ $wp->init();
 
 <?php if ( is_user_logged_in() ){?>
 <?php $cat_= $_POST['cat'];
-	  $owner = $_POST['owner'];
+	  $owner = $_POST['curret_user'];
 	  $title = $_POST['title'];
 	  $content = $_POST['content'];
 	  
