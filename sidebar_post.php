@@ -30,9 +30,9 @@ function spost_loaded() {
 add_action( 'plugins_loaded', 'spost_loaded', 20 );
 global $shortname;
 $shortname = "spost_";
-define('SPOST_VERSION','2.0.0');
-define('SPOST_DATABASE_VERSION','2.0.0');
-define('SPOST_BUILD','05182014');
+define('SPOST_VERSION','2.0.1');
+define('SPOST_DATABASE_VERSION','2.0.1');
+define('SPOST_BUILD','11282014');
 define('SOFTWARE_NAME','Sidebar Post');
 define( 'SPOST_PLUGIN_DIR', WP_PLUGIN_DIR . '/sidebar-post' );
 define( 'SPOST_PLUGIN_URL', WP_PLUGIN_URL . '/sidebar-post' );
