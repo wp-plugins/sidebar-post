@@ -3,7 +3,7 @@
 Plugin Name: Sidebar Posting
 Plugin URI: http://www.wpcoding.ca
 Description: This plugin places a posting form in the sidebar
-Version: 2.0.0
+Version: 2.0.1
 Author: Janvier M @ WpCoding .Ca
 Author URI: http://www.wpcoding.ca 
 

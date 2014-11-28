@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: ishimwe,joshuadamour,janvierdesigns
-Donate link: http://www.wprooms.com/donate
+Donate link: http://www.wpcoding.com/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 3.0
-Tested up to: Wordpress 3.9.1
-Stable tag: 2.0.0
+Tested up to: Wordpress 4.0.1
+Stable tag: 2.0.1
 
 This plugin allows your visitors (logged in) to submit posts to your site via a simple sidebar widget form.
 
@@ -26,7 +26,7 @@ PS: You can also add the form anywhere in the wordpress by calling the <b>sideba
 
 == Frequently Asked Questions ==
 
-Check http://www.freelanceresources.net
+Check http://www.wpcoding.ca
 
 == Screenshots ==
 
