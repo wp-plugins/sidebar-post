@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: ishimwe,joshuadamour,janvierdesigns
-Donate link: http://www.wpcoding.com/donate
+Donate link: http://www.wpcoding.ca/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 3.0
 Tested up to: Wordpress 4.0.1
