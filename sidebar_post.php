@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Sidebar Posting
-Plugin URI: http://www.janvierdesigns.com
+Plugin URI: http://www.wpcoding.ca
 Description: This plugin places a posting form in the sidebar
 Version: 2.0.0
-Author: Janvier M @ JanvierDesigns
-Author URI: http://www.janvierdesigns.com 
+Author: Janvier M @ WpCoding .Ca
+Author URI: http://www.wpcoding.ca 
 
 
     This program is free software; you can redistribute it and/or modify
