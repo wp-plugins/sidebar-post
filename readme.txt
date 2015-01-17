@@ -51,3 +51,7 @@ Check http://www.wpcoding.ca
 == Upgrade Notice ==
 
 
+== Upcoming features==
+1. Facebook and Twitter login
+2. Email to user Creation
+
