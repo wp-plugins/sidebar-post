@@ -3,7 +3,7 @@
 Plugin Name: Sidebar Posting
 Plugin URI: http://www.wpcoding.ca
 Description: This plugin places a posting form in the sidebar
-Version: 3.0.0
+Version: 3.0.1
 Author: Janvier M @ WpCoding .Ca
 Author URI: http://www.wpcoding.ca 
 Text Domain: spost
@@ -17,8 +17,8 @@ function spost_loaded() {
 add_action( 'plugins_loaded', 'spost_loaded', 20 );
 global $shortname;
 $shortname = "spost_";
-define('SPOST_VERSION','3.0.0');
-define('SPOST_DATABASE_VERSION','3.0.0');
+define('SPOST_VERSION','3.0.1');
+define('SPOST_DATABASE_VERSION','3.0.1');
 define('SPOST_BUILD','01132015');
 define('SOFTWARE_NAME',__('Sidebar Post','spost'));
 define( 'SPOST_PLUGIN_DIR', WP_PLUGIN_DIR . '/sidebar-post' );
@@ -379,7 +379,7 @@ function spost_admin_fx(){?>
 	<div class="spostRow" data-spostid="spost_require_email">
     	<div class="inputTitle"><?php _e('Require Email to post','spost'); ?></div>
         <div class="inputContent">
-        <div class="<?php if(get_option('spost_require_email')=='1'){_e('yes','spost');}else{_e('no','spost');} ?>" data-toggleyesno="spost_require_email"><?php if(get_option('spost_require_email')=='1' || get_option('spost_require_email')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
+        <div class="<?php if(get_option('spost_require_email')=='1' || get_option('spost_require_email')==''){_e('yes','spost');}else{_e('no','spost');} ?>" data-toggleyesno="spost_require_email"><?php if(get_option('spost_require_email')=='1' || get_option('spost_require_email')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
         <input type="hidden" name="spost_require_email" id="spost_require_email" value="<?php echo get_option('spost_require_email'); ?>" />
         </div>
         <div class="spostLegend"></div><div class="clearall"></div>

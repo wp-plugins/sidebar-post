@@ -3,8 +3,8 @@ Contributors: ishimwe,janvierdesigns
 Donate link: http://www.wpcoding.ca/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 3.0
-Tested up to: Wordpress 4.0.1
-Stable tag: 3.0.0
+Tested up to: Wordpress 4.1
+Stable tag: 3.0.1
 
 This plugin allows your visitors (logged in) to submit posts to your site via a simple sidebar widget form.
 
@@ -43,7 +43,11 @@ Check http://www.wpcoding.ca
 
 3.0.0 : * Added Advanced Control Panel
 	* Introduced premium options
+	* Added Color picker for options
 
+
+3.0.1 : * Corrected some default display
+	* Added Color picker for options
 == Upgrade Notice ==
 
 
