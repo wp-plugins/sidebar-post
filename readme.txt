@@ -3,7 +3,7 @@ Contributors: ishimwe,janvierdesigns
 Donate link: http://www.wpcoding.ca/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 3.0
-Tested up to: Wordpress 4.1
+Tested up to: Wordpress 4.0.1
 Stable tag: 3.0.1
 
 This plugin allows your visitors (logged in) to submit posts to your site via a simple sidebar widget form.
@@ -17,8 +17,8 @@ It comes  with a javascript form validation (user can't submit post if some fiel
 You can join/follow the discussion about the plugin on its home page at http://www.wpcoding.ca/forums/forum/plugins/sidebar-post/
 
 Twitter: https://twitter.com/wpcodingca
-Github : https://github.com/wordpresscoding
 Facebook: https://www.facebook.com/wpcoding.ca
+Github: https://github.com/wordpresscoding
 == Installation ==
 
 
@@ -46,15 +46,7 @@ Check http://www.wpcoding.ca
 
 3.0.0 : * Added Advanced Control Panel
 	* Introduced premium options
-	* Added Color picker for options
 
-
-3.0.1 : * Corrected some default display
-	* Added Color picker for options
 == Upgrade Notice ==
 
-
-== Upcoming features==
-1. Facebook and Twitter login
-2. Email to user Creation
 
