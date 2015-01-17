@@ -16,6 +16,9 @@ It comes  with a javascript form validation (user can't submit post if some fiel
 
 You can join/follow the discussion about the plugin on its home page at http://www.wpcoding.ca/forums/forum/plugins/sidebar-post/
 
+Twitter: https://twitter.com/wpcodingca
+Github : https://github.com/wordpresscoding
+Facebook: https://www.facebook.com/wpcoding.ca
 == Installation ==
 
 
