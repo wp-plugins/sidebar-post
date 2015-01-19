@@ -12,30 +12,29 @@ function IsEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
 }
-
-	/************************************* AJAX AND FORM STUFF ******************************/
-	$("#send_post").live( "click", function( event ) {
 	var AJAX_URL = $("#AjaxUrl").val(); 
 	var user_email = $("#spost_poster_email").val();
 	var spost_title = $("#spost_title").val();
 	var spost_content = $("#spost_content").val();
 	var spost_poster_name = $("#spost_poster_name").val();
-
+	/************************************* AJAX AND FORM STUFF ******************************/
+	$("#send_post").on( "click", function( event ) {
+	event.preventDefault();		
 	  console.log( $(  "#SidebarPost" ).serialize() ); //serialize form on client side
 		if(spost_poster_name==''){
 			$("#spost_poster_name").addClass('spostError');
-			event.preventDefault();
+ 
 		}else if(!IsEmail(user_email)){
 			$("#spost_poster_email").addClass('spostError');
-			event.preventDefault();
+ 
 		}else if(spost_title==''){
 			$("#spost_title").addClass('spostError');
-			event.preventDefault();
+ 
 		}else if(spost_content==''){
 			$("#spost_content").addClass('spostError');
-			event.preventDefault();
+ 
 		}else{
-		event.preventDefault();		
+		
 	  var pdata = {
 		 action: "spostPublish",
 		 curret_user: $("#current_user_id").val(),

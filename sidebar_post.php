@@ -3,7 +3,7 @@
 Plugin Name: Sidebar Posting
 Plugin URI: http://www.wpcoding.ca
 Description: This plugin places a posting form in the sidebar
-Version: 3.0.1
+Version: 3.0.3
 Author: Janvier M @ WpCoding .Ca
 Author URI: http://www.wpcoding.ca 
 Text Domain: spost
@@ -17,9 +17,9 @@ function spost_loaded() {
 add_action( 'plugins_loaded', 'spost_loaded', 20 );
 global $shortname;
 $shortname = "spost_";
-define('SPOST_VERSION','3.0.1');
-define('SPOST_DATABASE_VERSION','3.0.1');
-define('SPOST_BUILD','01132015');
+define('SPOST_VERSION','3.0.3');
+define('SPOST_DATABASE_VERSION','3.0.3');
+define('SPOST_BUILD','01182015');
 define('SOFTWARE_NAME',__('Sidebar Post','spost'));
 define( 'SPOST_PLUGIN_DIR', WP_PLUGIN_DIR . '/sidebar-post' );
 define( 'SPOST_PLUGIN_URL', WP_PLUGIN_URL . '/sidebar-post' );
@@ -34,10 +34,13 @@ function update_db_options(){
 	update_option("spost_db_version",SPOST_VERSION);
 	update_option("spost_db_build",SPOST_BUILD);
 }add_action("spost_loader_activate", "update_db_options");
-add_action('init', 'spost_theme_setup');
+
 function spost_theme_setup(){
-    load_theme_textdomain('spost', SPOST_PLUGIN_URL . '/languages');
-}
+    //load_theme_textdomain('spost', SPOST_PLUGIN_URL . '/languages');
+	load_plugin_textdomain( 'spost', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/');
+}add_action( 'init', 'spost_theme_setup' );
+
+
 function curPageName() {
  return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 }add_action('wp_head', 'curPageName');
@@ -54,8 +57,8 @@ function spost_dynamic_styles(){?>
     </style>
 <?php }add_action('wp_head','spost_dynamic_styles');
  function spost_script_enqueue_js_css() {
-	wp_register_script( 'spost-validate', SPOST_PLUGIN_URL . '/js/validate.js');
-	wp_register_script( 'spost', SPOST_PLUGIN_URL . '/js/spost.js');
+	wp_register_script( 'spost-validate', SPOST_PLUGIN_URL . '/js/validate.js', array('jquery'),SPOST_VERSION);
+	wp_register_script( 'spost', SPOST_PLUGIN_URL . '/js/spost.js', array('jquery'),SPOST_VERSION);
 	wp_enqueue_script( 'spost-validate' );
   /* $handle = 'jquery-ui-core';
    $list = 'registered';
@@ -87,18 +90,18 @@ elseif($thecase=='loggedin'){?>
 <div id="spostMessage"></div>
     <?php if(is_user_logged_in()): ?>
 
-	<form action="" method="post" onsubmit="return validate_form(this)" id="SidebarPost">
+	<form action="" method="post"  id="SidebarPost">
     <input type="hidden" name="submit-post" value="yes" />
     <input type="hidden" name="current_user_id" id="current_user_id" value="<?php echo get_current_user_id(); ?>" />
     <input type="hidden" name="AjaxUrl" id="AjaxUrl" value="<?php bloginfo('home') ?>/wp-admin/admin-ajax.php" />
 	<p>
     <?php $current_user = wp_get_current_user(); ?>
-	    <label><strong><?php _e('Yout E-mail','spost'); ?></strong><br>
+	    <label><strong><?php _e('Your E-mail','spost'); ?></strong><br>
 	    <input name="spost_poster_email" id="spost_poster_email" type="text" style="width: 90%; background: #E5E5E5" value="<?php echo $current_user->user_email; ?>" readonly>
 	    </label>
     </p>
 	<p>
-	    <label><strong><?php _e('Yout Post Title','spost'); ?></strong><br>
+	    <label><strong><?php _e('Your Post Title','spost'); ?></strong><br>
 	    <input name="title" id="spost_title" type="text" class="white" style="width: 90%; " value="">
 	    </label>
     </p>
@@ -109,8 +112,8 @@ elseif($thecase=='loggedin'){?>
 	    <br>
 		<label><strong><?php _e('Category','spost'); ?></strong>
 			<?php
-			$taxonomy = get_option('spost_posting_taxonomy');
-			if($taxonomy=='category' || $taxonomy=='category'){
+			$taxonomyX = get_option('spost_posting_taxonomy');
+			if($taxonomyX=='category' || $taxonomyX==''){
 $select = wp_dropdown_categories('show_option_none='.__('Select a category','spost').'&show_count=1&hide_empty=0&orderby=name&echo=0&id=spost_category');
 			}else{
 $select = wp_dropdown_categories('show_option_none='.__('Select a category','spost').'&show_count=1&hide_empty=0&orderby=name&echo=0&id=spost_category&taxonomy='.get_option('spost_posting_taxonomy'));
@@ -121,7 +124,7 @@ $select = wp_dropdown_categories('show_option_none='.__('Select a category','spo
 			?>	
 		</label><p>
 		<input type="hidden" name="owner" value="<?php echo $user_id;?>"  /></p>
-	    <input type="submit" name="send_post"  id="send_post" value="Send for review" style="width: 150px; height: 40px; background:#EFEFEF" />
+	    <input type="submit" name="send_post"  id="send_post" value="<?php _e('Send for review','spost'); ?>" style="width: 150px; height: 40px; background:#EFEFEF" />
         </p>	
 	</form>
     <?php else: ?>
@@ -147,18 +150,18 @@ elseif($thecase=='everybody'){ ?>
 <div id="spostMessage"></div>
     <?php if(is_user_logged_in()): ?>
 
-	<form action="" method="post" onsubmit="return validate_form(this)" id="SidebarPost">
+	<form action="" method="post"  id="SidebarPost">
     <input type="hidden" name="submit-post" value="yes" />
     <input type="hidden" name="current_user_id" id="current_user_id" value="<?php echo get_current_user_id(); ?>" />
     <input type="hidden" name="AjaxUrl" id="AjaxUrl" value="<?php bloginfo('home') ?>/wp-admin/admin-ajax.php" />
 	<p>
     <?php $current_user = wp_get_current_user(); ?>
-	    <label><strong><?php _e('Yout E-mail','spost'); ?></strong><br>
+	    <label><strong><?php _e('Your E-mail','spost'); ?></strong><br>
 	    <input name="spost_poster_email" id="spost_poster_email" type="text" style="width: 90%; background: #E5E5E5" value="<?php echo $current_user->user_email; ?>" readonly>
 	    </label>
     </p>
 	<p>
-	    <label><strong><?php _e('Yout Post Title','spost'); ?></strong><br>
+	    <label><strong><?php _e('Your Post Title','spost'); ?></strong><br>
 	    <input name="title" id="spost_title" type="text" class="white" style="width: 90%; " value="">
 	    </label>
     </p>
@@ -169,8 +172,8 @@ elseif($thecase=='everybody'){ ?>
 	    <br>
 		<label><strong><?php _e('Category','spost'); ?></strong>
 			<?php
-			$taxonomy = get_option('spost_posting_taxonomy');
-			if($taxonomy=='category' || $taxonomy==''){
+			$taxonomyX = get_option('spost_posting_taxonomy');
+			if($taxonomyX=='category' || $taxonomyX==''){
 $select = wp_dropdown_categories('show_option_none='.__('Select a category','spost').'&show_count=1&hide_empty=0&orderby=name&echo=0&id=spost_category');
 			}else{
 $select = wp_dropdown_categories('show_option_none='.__('Select a category','spost').'&show_count=1&hide_empty=0&orderby=name&echo=0&id=spost_category&taxonomy='.get_option('spost_posting_taxonomy'));
@@ -181,11 +184,11 @@ $select = wp_dropdown_categories('show_option_none='.__('Select a category','spo
 			?>	
 		</label><p>
 		<input type="hidden" name="owner" value="<?php echo $user_id;?>"  /></p>
-	    <input type="submit" name="send_post"  id="send_post" value="Send for review" style="width: 150px; height: 40px; background:#EFEFEF" />
+	    <input type="submit" name="send_post"  id="send_post" value="<?php _e('Send for review','spost'); ?>" style="width: 150px; height: 40px; background:#EFEFEF" />
         </p>	
 	</form>
     <?php else: ?>
-	<form action="" method="post" onsubmit="return validate_form(this)" id="SidebarPost">
+	<form action="" method="post"  id="SidebarPost">
     <input type="hidden" name="submit-post" value="yes" />
     <input type="hidden" name="current_user_id" id="current_user_id" value="<?php echo get_current_user_id(); ?>" />
     <input type="hidden" name="AjaxUrl" id="AjaxUrl" value="<?php bloginfo('home') ?>/wp-admin/admin-ajax.php" />
@@ -214,8 +217,8 @@ $select = wp_dropdown_categories('show_option_none='.__('Select a category','spo
 	    <br>
 		<label><strong><?php _e('Category','spost'); ?></strong>
 			<?php
-			$taxonomy = get_option('spost_posting_taxonomy');
-			if($taxonomy=='category' || $taxonomy==''){
+			$taxonomyX = get_option('spost_posting_taxonomy');
+			if($taxonomyX=='category' || $taxonomyX==''){
 $select = wp_dropdown_categories('show_option_none='.__('Select a category','spost').'&show_count=1&hide_empty=0&orderby=name&echo=0&id=spost_category');
 			}else{
 $select = wp_dropdown_categories('show_option_none='.__('Select a category','spost').'&show_count=1&hide_empty=0&orderby=name&echo=0&id=spost_category&taxonomy='.get_option('spost_posting_taxonomy'));
@@ -226,7 +229,7 @@ $select = wp_dropdown_categories('show_option_none='.__('Select a category','spo
 			?>	
 		</label><p>
 		<input type="hidden" name="owner" value="<?php echo $user_id;?>"  /></p>
-	    <input type="submit" name="send_post"  id="send_post" value="Send for review" style="width: 150px; height: 40px; background:#EFEFEF" />
+	    <input type="submit" name="send_post"  id="send_post" value="<?php _e('Send for review','spost'); ?>" style="width: 150px; height: 40px; background:#EFEFEF" />
         </p>	
 	</form>
     <div id="spostMessage"></div>
@@ -341,15 +344,18 @@ function spost_admin_actions() {
   
     $one = add_menu_page(__('Sidebar Post','spost'),__('Sidebar Post','spost'),'switch_themes', "spost", "spost_admin_fx", SPOST_PLUGIN_URL.'/images/icon.png', '5.4');
 	$mainsettings = add_submenu_page('spost', __('Main Settings','spost'), __('Main Settings','spost'), 'switch_themes', 'spost-main-settings', 'spost_main_options' );
+	$uninstallspost = add_submenu_page('spost', __('Uninstall','spost'), __('Uninstall','spost'), 'switch_themes', 'spost-uninstall', 'spost_uninstall_fx' );
 	$loginattemps = add_submenu_page('spost', __('Documentation','spost'), __('Documentation','spost'), 'switch_themes', 'spost-documentation', 'spost_documentation_fx' );
   	
 add_action( 'admin_print_styles-' . $one, 'spost_plugin_enqueue_scripts' );
 add_action( 'admin_print_styles-' . $mainsettings, 'spost_plugin_enqueue_scripts' );
 add_action( 'admin_print_styles-' . $loginattemps, 'spost_plugin_enqueue_scripts' );  
+add_action( 'admin_print_styles-' . $uninstallspost, 'spost_plugin_enqueue_scripts' );
 
 add_action( 'admin_head-'. $one, 'spost_header_admin' );
 add_action( 'admin_head-'. $mainsettings, 'spost_header_admin' );
 add_action( 'admin_head-'. $loginattemps, 'spost_header_admin' );
+add_action( 'admin_head-'. $uninstallspost, 'spost_header_admin' );
 
 }add_action('admin_menu', 'spost_admin_actions'); 
 
@@ -379,7 +385,7 @@ function spost_admin_fx(){?>
 	<div class="spostRow" data-spostid="spost_require_email">
     	<div class="inputTitle"><?php _e('Require Email to post','spost'); ?></div>
         <div class="inputContent">
-        <div class="<?php if(get_option('spost_require_email')=='1' || get_option('spost_require_email')==''){_e('yes','spost');}else{_e('no','spost');} ?>" data-toggleyesno="spost_require_email"><?php if(get_option('spost_require_email')=='1' || get_option('spost_require_email')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
+        <div class="<?php if(get_option('spost_require_email')=='1' || get_option('spost_require_email')==''){echo 'yes';}else{echo 'no';} ?>" data-toggleyesno="spost_require_email"><?php if(get_option('spost_require_email')=='1' || get_option('spost_require_email')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
         <input type="hidden" name="spost_require_email" id="spost_require_email" value="<?php echo get_option('spost_require_email'); ?>" />
         </div>
         <div class="spostLegend"></div><div class="clearall"></div>
@@ -433,6 +439,25 @@ function spost_admin_fx(){?>
         </div>
         <div class="spostLegend"></div><div class="clearall"></div>
     </div><div class="clearall"></div>
+<div class="spostRow" data-spostid="spost_posting_default_user">
+    	<div class="inputTitle"><?php _e('Default Post user','spost'); ?></div>
+        <div class="inputContent">
+        <?php if(get_option('spost_posting_default_user')==''){
+			$user = get_user_by('email', get_option('admin_email') ); 
+			$selected_user = $user->ID;
+			}else{
+			$selected_user = get_option('spost_posting_default_user');
+			}
+		
+		wp_dropdown_users(array('name' => 'spost_posting_default_user', 
+									  'show'=> 'display_name',
+									  'orderby'                 => 'display_name',
+									  'id'                      => 'spost_posting_default_user',
+									  'selected'                => $selected_user,)); ?>
+        </div>
+        <div class="spostLegend"><?php _e('Posts from unregistred users will be assigned to this user','spost'); ?></div><div class="clearall"></div>
+    </div><div class="clearall"></div>
+
 <div class="spostRow" data-spostid="spost_posting_taxonomy">
     <input type="submit" name="save_settings" id="save_settings" style="margin-left:auto; margin-right:auto; border: none; background:#333; color: #FFF; border-radius: 15px; padding:5px 25px; cursor: pointer;" value="<?php _e('Save Settings','spost'); ?>"/>	 <div id="spostMessages"></div>
 </div><div class="clearall"></div>
@@ -499,7 +524,7 @@ toggle_yesno();
 </script>
 <?php }
 function sidebar_post_fx(){
-	
+
 }
 function spost_main_options(){?>
 <div id="spostContainer">
@@ -517,7 +542,7 @@ function spost_main_options(){?>
 	<div class="spostRow" data-spostid="spost_send_poster_email">
     	<div class="inputTitle"><?php _e('Send an email to the poster','spost'); ?></div>
         <div class="inputContent">
-        <div class="<?php if(get_option('spost_send_poster_email')=='1' || get_option('spost_send_poster_email')==''){_e('yes','spost');}else{_e('no','spost');} ?>" data-toggleyesno="spost_send_poster_email"><?php if(get_option('spost_send_poster_email')=='1' || get_option('spost_send_poster_email')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
+        <div class="<?php if(get_option('spost_send_poster_email')=='1' || get_option('spost_send_poster_email')==''){echo 'yes';}else{echo 'no';} ?>" data-toggleyesno="spost_send_poster_email"><?php if(get_option('spost_send_poster_email')=='1' || get_option('spost_send_poster_email')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
         <input type="hidden" name="spost_send_poster_email" id="spost_send_poster_email" value="<?php echo get_option('spost_send_poster_email'); ?>" />
         </div>
         <div class="spostLegend"></div><div class="clearall"></div>
@@ -559,7 +584,7 @@ function spost_main_options(){?>
 	<div class="spostRow" data-spostid="spost_log_user_ip">
     	<div class="inputTitle"><?php _e('Log user IP','spost'); ?></div>
         <div class="inputContent">
-        <div class="<?php if(get_option('spost_log_user_ip')=='1' || get_option('spost_log_user_ip')==''){_e('yes','spost');}else{_e('no','spost');} ?>" data-toggleyesno="spost_log_user_ip"><?php if(get_option('spost_log_user_ip')=='1' || get_option('spost_log_user_ip')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
+        <div class="<?php if(get_option('spost_log_user_ip')=='1' || get_option('spost_log_user_ip')==''){echo 'yes';}else{echo 'no';} ?>" data-toggleyesno="spost_log_user_ip"><?php if(get_option('spost_log_user_ip')=='1' || get_option('spost_log_user_ip')==''){_e('Yes','spost');}else{_e('No','spost');} ?></div>
         <input type="hidden" name="spost_log_user_ip" id="spost_log_user_ip" value="<?php echo get_option('spost_log_user_ip'); ?>" />
         </div>
         <div class="spostLegend"><?PHP _e('Whether or not to log the user&apos;s IP ddress',''); ?></div><div class="clearall"></div>
@@ -618,7 +643,7 @@ function spost_main_options(){?>
 </div><div class="clearall"></div><?php }
 function spost_documentation_fx(){?>
 <div id="spostContainer">
-<form id="spostForm1" enctype="multipart/form-data" method="post" action="">
+ 
 	<div class="spostRow" id="theHeader">
     	<h1><?php _e('Sidebar Post - Documentation','spost'); ?></h1> 
     </div><div class="clearall"></div>
@@ -633,12 +658,31 @@ function spost_documentation_fx(){?>
         <p><?php _e('Simply go to the widget area, and add the <b>`Sidebar Post Widget`</b> whereyou want it to appear','spost'); ?></p>
         <p><?php echo __('Alternatively, you can insert the <b>[sidebarpost]</b> shortcode in a page or post','spost'); ?>
     </div><div class="clearall"></div>
-</form>
+ 
 </div>
 <?php }
+function spost_uninstall_fx(){
+?>
+<div id="spostContainer"> 
+	<div class="spostRow" id="theHeader">
+    	<h1><?php _e('Sidebar Post - Uninstall','spost'); ?></h1>
+        <div class="clearall"></div>
+    </div><div class="clearall"></div>
+	<div class="spostRow">
+    	<?php _e('Coming up in the next version','spost'); ?>
+        <div class="clearall"></div>
+    </div><div class="clearall"></div>
+</div>
+<?php 
+}
 function create_spost_ajax(){
 	$cat_= $_POST['spost_category'];
+	
+	if($_POST['current_user_id']=='0'){
+	$owner = get_option('spost_posting_default_user');
+	}else{
 	$owner = $_POST['current_user_id'];
+	}
 	$title = $_POST['spost_title'];
 	$content = $_POST['spost_content'];
 	  
@@ -649,11 +693,11 @@ function create_spost_ajax(){
   $sPost['post_status'] = get_option('spost_posting_status');
   $sPost['post_author'] = $owner;
   $sPost['post_type'] = get_option('spost_posting_posttype');
-  $sPost['post_category'] = array($cat_);
   
   if(is_user_logged_in()){
 // Insert the post into the database
 	$successful_post = wp_insert_post($sPost);	
+	wp_set_object_terms( $successful_post, $cat_, get_option('spost_posting_taxonomy') );
 	  if($successful_post){
 		  _e('Thank you for submitting your post. It will be reviewed and once approved, published','');
 $spost_admin_email = get_option('spost_admin_email'); 
@@ -686,9 +730,9 @@ if(current_user_can('administrator','update_plugins')){
 	foreach ($arr as $key => $value){
 				update_option($key,$value); 
 			}
-$settingsStuff = array('updatestatus'=>'success','updatecontext'=>__('Setting Saved successfully','msregister'));	
+$settingsStuff = array('updatestatus'=>'success','updatecontext'=>__('Setting Saved successfully','spost'));	
 }else{
-$settingsStuff = array('updatestatus'=>'error','updatecontext'=>__('There was an error','msregister'));	
+$settingsStuff = array('updatestatus'=>'error','updatecontext'=>__('There was an error','spost'));	
 }
 	echo json_encode($settingsStuff);
 	
