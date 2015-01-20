@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: ishimwe,janvierdesigns
+Contributors: ishimwe,wpcoding.ca
 Donate link: http://www.wpcoding.ca/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 3.0
 Tested up to: Wordpress 4.1
-Stable tag: 3.0.3
+Stable tag: 3.0.4
 
 This plugin allows your visitors (logged in OR Not) to submit posts to your site via a simple sidebar widget form.
 Cette extension permet à vos visiteurs de soumettre le contenu à votre site, sujet d'approbation
@@ -12,16 +12,23 @@ Cette extension permet à vos visiteurs de soumettre le contenu à votre site, suj
 == Description ==
 
 This plugin allows your visitors (logged in OR Not) to submit posts to your site via a sidebar widget form, or a custom shortcode in a page or post of your choice.
-This is a very easy way to get your visitors to engage on your website. We will have a premium module that will allow users whose emails don't exist in the database to be added immediately. 
-It comes  with a javascript form validation (user can't submit post if some fields are empty), and once the post has been submitted it is saved as a draft.
+This is a very easy way to get your visitors to engage on your website. The idea came from a client who wanted a way to let members of their congregation post articles in the main church's website
+Some of the niches this plugin can be useful include: 
+
+* Blogging website with many contributors
+* Community webstes with user participation/interativity
+* Forum like websites that don't want to use a fully featured forum module/plugin
+* Classified ads website where users post and review others' posts
+
+and more
 
 This plugin is fully localizable with .po file included. The .mo for  Français is included
 
 You can join/follow the discussion about the plugin on its home page at http://www.wpcoding.ca/forums/forum/plugins/sidebar-post/
 
-Twitter: https://twitter.com/wpcodingca
-Facebook: https://www.facebook.com/wpcoding.ca
-Github: https://github.com/wordpresscoding
+* Twitter: https://twitter.com/wpcodingca
+* Facebook: https://www.facebook.com/wpcoding.ca
+* Github: https://github.com/wpcodingca
 
 == Installation ==
 
@@ -68,6 +75,10 @@ Check http://www.wpcoding.ca
 * Introduced  uninstaller to come in version 3.0.4
 * Added full support of the language. Included fr_FR.mo
 * Added Default Post user
+
+=3.0.4=
+
+* Fixed formatting issues
 
 == Upgrade Notice ==
 

@@ -3,7 +3,7 @@
 Plugin Name: Sidebar Posting
 Plugin URI: http://www.wpcoding.ca
 Description: This plugin places a posting form in the sidebar
-Version: 3.0.3
+Version: 3.0.4
 Author: Janvier M @ WpCoding .Ca
 Author URI: http://www.wpcoding.ca 
 Text Domain: spost
@@ -17,9 +17,9 @@ function spost_loaded() {
 add_action( 'plugins_loaded', 'spost_loaded', 20 );
 global $shortname;
 $shortname = "spost_";
-define('SPOST_VERSION','3.0.3');
-define('SPOST_DATABASE_VERSION','3.0.3');
-define('SPOST_BUILD','01182015');
+define('SPOST_VERSION','3.0.4');
+define('SPOST_DATABASE_VERSION','3.0.4');
+define('SPOST_BUILD','01202015');
 define('SOFTWARE_NAME',__('Sidebar Post','spost'));
 define( 'SPOST_PLUGIN_DIR', WP_PLUGIN_DIR . '/sidebar-post' );
 define( 'SPOST_PLUGIN_URL', WP_PLUGIN_URL . '/sidebar-post' );
@@ -128,6 +128,7 @@ $select = wp_dropdown_categories('show_option_none='.__('Select a category','spo
         </p>	
 	</form>
     <?php else: ?>
+    <div id="loginButtons">
 	<div class="mustLog">
 		<button name="spostLogin" id="spostLogin" onclick="location.href='<?php echo get_bloginfo('home'); ?>/wp-login.php'"><?php _e('Login','spost'); ?></button>
     </div><div class="clearall"></div>
@@ -137,6 +138,7 @@ $select = wp_dropdown_categories('show_option_none='.__('Select a category','spo
 	<div class="mustLogRegister">
 		<button name="spostRegister" id="spostRegister" onclick="location.href='<?php echo get_bloginfo('home'); ?>/wp-login.php?action=register'"><?php _e('Register','spost'); ?></button>
     </div><div class="clearall"></div>
+    </div>
     <?php endif; ?>
 </div>
 <?php
@@ -343,7 +345,7 @@ function sidebar_posting_menu() {
 function spost_admin_actions() {
   
     $one = add_menu_page(__('Sidebar Post','spost'),__('Sidebar Post','spost'),'switch_themes', "spost", "spost_admin_fx", SPOST_PLUGIN_URL.'/images/icon.png', '5.4');
-	$mainsettings = add_submenu_page('spost', __('Main Settings','spost'), __('Main Settings','spost'), 'switch_themes', 'spost-main-settings', 'spost_main_options' );
+	$mainsettings = add_submenu_page('spost', __('Advanced Settings','spost'), __('Advanced Settings','spost'), 'switch_themes', 'spost-main-settings', 'spost_other_admin_options' );
 	$uninstallspost = add_submenu_page('spost', __('Uninstall','spost'), __('Uninstall','spost'), 'switch_themes', 'spost-uninstall', 'spost_uninstall_fx' );
 	$loginattemps = add_submenu_page('spost', __('Documentation','spost'), __('Documentation','spost'), 'switch_themes', 'spost-documentation', 'spost_documentation_fx' );
   	
@@ -526,11 +528,11 @@ toggle_yesno();
 function sidebar_post_fx(){
 
 }
-function spost_main_options(){?>
+function spost_other_admin_options(){?>
 <div id="spostContainer">
 <form id="spostForm1" enctype="multipart/form-data" method="post" action="">
 	<div class="spostRow" id="theHeader">
-    	<h1><?php _e('Sidebar Post - Admin Main Settings','spost'); ?></h1>
+    	<h1><?php _e('Sidebar Post - Avanced Settings','spost'); ?></h1>
         <div class="clearall"></div>
     </div><div class="clearall"></div>
 	<div class="spostRow" data-spostid="spost_admin_email">
