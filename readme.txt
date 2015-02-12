@@ -4,7 +4,7 @@ Donate link: http://www.wpcoding.ca/donate
 Tags: post,sidebar, sidebar post, wordpress, posting, wordpress MU, MU
 Requires at least: Wordpress 3.0
 Tested up to: Wordpress 4.1
-Stable tag: 3.0.4
+Stable tag: 3.0.5
 
 This plugin allows your visitors (logged in OR Not) to submit posts to your site via a simple sidebar widget form.
 Cette extension permet à vos visiteurs de soumettre le contenu à votre site, sujet d'approbation
@@ -79,6 +79,11 @@ Check http://www.wpcoding.ca
 =3.0.4=
 
 * Fixed formatting issues
+
+=3.0.5=
+
+* Added a fully working Uninstaller
+* Fixed two unnecessary loops
 
 == Upgrade Notice ==
 
