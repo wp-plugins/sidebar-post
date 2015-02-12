@@ -26,3 +26,7 @@ padding-left: 10px;
 .failure{ background:#f00; color: #fff; padding:5px;}
 .spostLegend{ float:right; min-width:50px; font-style:italic; color:#099; font-weight:100}
 .premium{ border: 1px #f00 solid; background:url(../images/premium.png) no-repeat;}
+.warningRed{ color:#F00; font-size:24px; line-height: 28px;}
+#uninstallit1{ float:left; margin-right: 10px;}
+#uninstallspost button{ cursor: pointer; border: none; background:#C0C0C0; border-radius:5px;}
+.finalRed{ background:#F00 !important; color: #fff; border-radius: 5px;}

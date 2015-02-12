@@ -1,0 +1,373 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SIDEBAR POST Plugin\n"
+"POT-Creation-Date: 2015-01-20 13:52-0500\n"
+"PO-Revision-Date: 2015-01-20 13:52-0500\n"
+"Last-Translator: Janvier M <janviersoft@gmail.com>\n"
+"Language-Team: WPCODING.CA <janviersoft@gmail.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: D:\\Dropbox\\Websites\\WP.ORG\\sidebar-post\\trunk\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: D:\\Dropbox\\Websites\\WP.ORG\\sidebar-post\\trunk\n"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:23
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:347
+msgid "Sidebar Post"
+msgstr "Sidebar Post"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:82
+msgid "Posting is disabled by the site admin"
+msgstr "Publication n`est pas autorisé par l`administrateur du site"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:99
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:161
+msgid "Your E-mail"
+msgstr "Votre Courriel"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:104
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:166
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:211
+msgid "Your Post Title"
+msgstr "Titre de Votre article"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:109
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:171
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:216
+msgid "Content of the post"
+msgstr "Contenu de l`article"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:113
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:175
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:220
+msgid "Category"
+msgstr "Catégorie"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:117
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:119
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:179
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:181
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:224
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:226
+msgid "Select a category"
+msgstr "Selectionnez une catégorie"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:127
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:189
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:234
+msgid "Send for review"
+msgstr "Envoyer pour revue"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:133
+msgid "Login"
+msgstr "Connection"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:136
+msgid "Or"
+msgstr "Ou"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:139
+msgid "Register"
+msgstr "Abonnement"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:201
+msgid "Your Name"
+msgstr "Votre nom"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:206
+msgid "Your email"
+msgstr "Votre E-mail"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:262
+msgid "Sidebar Post Widget"
+msgstr "Sidebar Post Widget"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:281
+msgid "Widget Title"
+msgstr "Titre du Widget"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:286
+msgid "Text:"
+msgstr "Texte:"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:291
+msgid "Posting Instructions:"
+msgstr "Instructions de publication:"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:348
+msgid "Advanced Settings"
+msgstr "Paramètres avancés"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:349
+msgid "Uninstall"
+msgstr "Désinstaller"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:350
+msgid "Documentation"
+msgstr "Documentation"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:375
+msgid "Sidebar Post - Main Settings"
+msgstr "Sidebar Post - Paramètres principaux"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:378
+msgid "Allow Posting"
+msgstr "Permettre la publication"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:381
+msgid "Everybody"
+msgstr "Tout le monde"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:382
+msgid "Only logged in"
+msgstr "Connectés seuls"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:383
+msgid "Do NOT allow"
+msgstr "Ne PAS permettre"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:388
+msgid "Require Email to post"
+msgstr "Requérir un email pour publier"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:390
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:475
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:547
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:589
+msgid "Yes"
+msgstr "Oui"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:390
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:476
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:547
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:589
+msgid "No"
+msgstr "Non"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:396
+msgid "Target Post type"
+msgstr "Type de poste de publication"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:416
+msgid "Target Taxonomy"
+msgstr "Taxonomie de publication"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:434
+msgid "Default Post Status"
+msgstr "Statut de publication par dfaut"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:437
+msgid "Draft"
+msgstr "Brouillon"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:438
+msgid "Publish"
+msgstr "Publish"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:445
+msgid "Default Post user"
+msgstr "Usager par défaut"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:460
+msgid "Posts from unregistred users will be assigned to this user"
+msgstr ""
+"Les articles publiés des usagers non nregistrés sont assignés à cet usager"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:464
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:641
+msgid "Save Settings"
+msgstr "Sauvegarder les paramètres"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:535
+msgid "Sidebar Post - Avanced Settings"
+msgstr "Sidebar Post - Paramètres avancés"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:539
+msgid "Admin Notification email"
+msgstr "Email de notification Admin"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:542
+msgid "The email address to be notified when posts are created"
+msgstr "L`adresse email à notifier quand une publication est faite"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:545
+msgid "Send an email to the poster"
+msgstr "Envoyer un email à la personne qui publie"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:553
+msgid "Advanced Login/Register"
+msgstr "Connection/Enregistrement avancés"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:557
+msgid "Select One"
+msgstr "Choisir Une option"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:567
+msgid "Interval between Posts"
+msgstr "Interval entre publication d&apos;articles"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:584
+msgid "The amount of time between a user is allowed to post again, in minutes"
+msgstr "Le temps permis entre publication d&apos;articles, en minutes "
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:587
+msgid "Log user IP"
+msgstr "Sauvegarder l`addresse IP du posteur"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:592
+msgid "Whether or not to log the user&apos;s IP ddress"
+msgstr "Si on doit garder l&apos;IP du posteur"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:595
+msgid "Login Button Background"
+msgstr "Fond du Bouton de Connection"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:599
+msgid "The background color of the Login button"
+msgstr "La couleur de fond du bouton de connection"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:602
+msgid "Login Button Text Color"
+msgstr "Coleur de texte du bouton de connection"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:606
+msgid "The text color of the Login button"
+msgstr "La couleur "
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:609
+msgid "Register Button Background"
+msgstr "Arrière font du bouton d&apos;abonnement"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:613
+msgid "The background color of the Register button"
+msgstr "La couleur d`arrière fond du bouton enregistrement"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:617
+msgid "Register Button Text Color"
+msgstr "Couleur de texte du bouton Abonnement"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:621
+msgid "The text color of the Register button"
+msgstr "La couleur de texte du bouton Abonnement"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:625
+msgid "OR separator Button Background"
+msgstr "Arrière fond du séparateur Ou "
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:629
+msgid "The background color of the Or button"
+msgstr "La couleur d`arrière fond du bouton separateur Ou"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:633
+msgid "Or Button Text Color"
+msgstr "Couleur de texte du bouton Ou"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:637
+msgid "The text color of the Or button"
+msgstr "La couleur du bouton Ou"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:650
+msgid "Sidebar Post - Documentation"
+msgstr "Sidebar Post - Documentation"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:653
+msgid "Introduction"
+msgstr "Introduction"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:654
+msgid "We are thrilled that you installed our Plugin."
+msgstr "Nous sommes contents que vous ayez installé notre extension."
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:655
+msgid ""
+"We hope is meets your needs and boosts our website or blog to another user "
+"engagement level"
+msgstr ""
+"Nous espérons qu`elle rencontre les besoins de votre site ou blog à un autre "
+"niveau d`implication de l`usager"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:656
+msgid ""
+"As you will see, this documentation is just in its infancy, but we will "
+"continue to improve upon it as we go."
+msgstr ""
+"Comme vous allez le remarquer sans doute, cette documentation est encore en "
+"phase enfantine, mais nous continuerons à l`améliorer en allant."
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:657
+msgid "You can also visit the plugin page if you have any question at "
+msgstr ""
+"Vous pouvez aussi  visiter l`extension dans notre forum si vous avez des "
+"questions à "
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:658
+msgid "Usage"
+msgstr "Usage"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:659
+msgid ""
+"We made this plugin as simple to use as it could be, by making it into a "
+"widget, and also providing a shortcode you can use to insert in pages and "
+"posts on your website. "
+msgstr ""
+"Nous avons fait cette extension aussi simple que nous pourrions, en la "
+"faisant un widget, en vous donnant aussi   un  shortcode que vous pouvez "
+"insérer dans des pages ou articles sur votre site. "
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:660
+msgid ""
+"Simply go to the widget area, and add the <b>`Sidebar Post Widget`</b> "
+"whereyou want it to appear"
+msgstr ""
+"Allez simplement dans la section widgets, et ajouter <b>`Sidebar Post "
+"Widget`</b>où que vous voulez qu&apos;il apparaisse"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:661
+msgid ""
+"Alternatively, you can insert the <b>[sidebarpost]</b> shortcode in a page "
+"or post"
+msgstr ""
+"En revanche, vous pouvez aussi insérer le shortcode <b>[sidebarpost]</b>dans "
+"une page ou un article"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:670
+msgid "Sidebar Post - Uninstall"
+msgstr "Sidebar Post - Désinstallation"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:674
+msgid "Coming up in the next version"
+msgstr "A venir dans la version prochaine"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:704
+msgid ""
+"Thank you for submitting your post. It will be reviewed and once approved, "
+"published"
+msgstr ""
+"Merci de soumettre votre article. Il sera revu et publié par les "
+"administrateurs une fois apprové"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:709
+msgid "New Post created on website"
+msgstr "Nouvel Article créé au site"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:735
+msgid "Setting Saved successfully"
+msgstr "Paramètres changés avec succès"
+
+#: D:\Dropbox\Websites\WP.ORG\sidebar-post\trunk/sidebar_post.php:737
+msgid "There was an error"
+msgstr "Il y a eu une erreur"
+
+#~ msgid "Main Settings"
+#~ msgstr "Paramètres principaux"
+
+#~ msgid "Sidebar Post - Admin Main Settings"
+#~ msgstr "Sidebar Post - Paramètres principaux admin"
+
+#~ msgid "Some text"
+#~ msgstr "Quelque Texte"
