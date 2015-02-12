@@ -17,7 +17,6 @@ function spost_loaded() {
 add_action( 'plugins_loaded', 'spost_loaded', 20 );
 global $shortname;
 $shortname = "spost_";
-
 define('SPOST_VERSION','3.0.5');
 define('SPOST_DATABASE_VERSION','3.0.5');
 define('SPOST_BUILD','02122015');

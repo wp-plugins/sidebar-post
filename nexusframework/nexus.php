@@ -172,7 +172,7 @@ toggle_yesno();
 				$('#spostMessages').html(obj.updatecontext);
 				$('#spostMessages').addClass('failure');
 			}
-	  });
+	  }); 
 	  
 	}) 
  $('#spost_custom_login_page option').attr('disabled','disabled');
